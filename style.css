@@ -1,0 +1,50 @@
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 80%;
+    height: 300vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.singleDiv {
+    width: calc(90%/4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    height: 50vh;
+}
+
+.singleDiv img {
+    width: 70%;
+    height: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #container {
+        width: 80%;
+        gap: 10px;
+    }
+
+    .singleDiv {
+        width: 90%;
+    }
+
+    .singleDiv img {
+        width: 70%;
+        height: 70%;
+    }
+
+}
